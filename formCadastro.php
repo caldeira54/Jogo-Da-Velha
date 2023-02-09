@@ -8,10 +8,10 @@
     <title>Jogo da Velha</title>
 </head>
 <body>
-    <form action="./cadastro.php">
+    <form action="./cadastro.php" method="POST">
         <div class="fora">
             <div class="jogador">
-                <label for="jogador">Jogador 1</label>
+                <label for="jogador">Jogador</label>
                 <input type="text" name="jogador">
             </div>
             

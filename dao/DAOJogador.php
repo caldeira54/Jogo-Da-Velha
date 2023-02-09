@@ -3,9 +3,7 @@ class DAOJogador
 {
     public function inclui(Jogador $jogador)
     {
-        $sql = 'insert 
-                into jogador (nome)
-                values (?)';
+        $sql = 'insert into jogador(nome) values(?);';
 
         $pst = Conexao::getPreparedStatement($sql);
         $pst->bindValue(1, $jogador->getNome());

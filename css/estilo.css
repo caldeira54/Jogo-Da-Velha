@@ -1,29 +1,29 @@
-#jogo{
-    width:603px;
-    height:600px;
-    border:solid 3px;
+.jogo{
+    width: 603px;
+    height: 600px;
+    border: solid 1px;
 }
  
 .linha{
-    height:200px;
-    border-bottom:solid 1px;
+    height: 200px;
+    border-bottom: solid 1px;
 }
  
 .casa{
-    width:200px;
-    height:100%;
-    border-right:solid 1px;
-    float:left;
+    width: 200px;
+    height: 100%;
+    border-right: solid 1px;
+    float: left;
 }
 
-.fora {
+.retangulo {
     width: 280px;
     height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border:solid 1px;
+    border: solid 1px;
 }
 
 .jogador {
@@ -31,5 +31,55 @@
 }
 
 .label {
+    margin-bottom: 20px;
+}
+
+.div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.tabela {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+table {
+    width: 800px; 
+    border-collapse: collapse;
+    color: #0a0c0d;
+}
+
+td {
+    border: 2px solid #0a0c0d;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    border: 2px solid #0a0c0d;
+    padding: 5px;
+    text-align: center;
+    background: #ababac;
+    color: #0a0c0d;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: line;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+    width: 200px;
+}
+
+#jogador1 {
     margin-bottom: 20px;
 }

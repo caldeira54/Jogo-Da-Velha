@@ -16,7 +16,7 @@
     $obj = new Jogador();
     $dao = new DAOJogador();
 
-    $nome = filter_input(INPUT_POST, 'nome');
+    $nome = filter_input(INPUT_POST, 'jogador');
 
     if ($nome) {
         $obj->setNome($nome);
