@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilo.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <title>Tabuleiro</title>
 </head>
 
 <body>
     <div class="div">
-        <div class="jogo">
+        <div id="jogo">
             <div class="linha">
                 <div class="casa" id="casa1"></div>
                 <div class="casa" id="casa2"></div>
@@ -27,6 +29,7 @@
                 <div class="casa" id="casa8"></div>
                 <div class="casa" id="casa9"></div>
             </div>
+            <div id="resultado"></div>
         </div>
 
         <form action="./index.php">
@@ -34,5 +37,4 @@
         </form>
     </div>
 </body>
-
 </html>
