@@ -1,0 +1,35 @@
+#jogo{
+    width:603px;
+    height:600px;
+    border:solid 3px;
+}
+ 
+.linha{
+    height:200px;
+    border-bottom:solid 1px;
+}
+ 
+.casa{
+    width:200px;
+    height:100%;
+    border-right:solid 1px;
+    float:left;
+}
+
+.fora {
+    width: 280px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border:solid 1px;
+}
+
+.jogador {
+    margin-bottom: 20px;
+}
+
+.label {
+    margin-bottom: 20px;
+}
