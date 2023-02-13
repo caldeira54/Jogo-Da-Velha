@@ -20,7 +20,6 @@ USE `jogoDaVelha` ;
 CREATE TABLE IF NOT EXISTS `jogoDaVelha`.`jogador` (
   `idJogador` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
-  `qtoVitorias` INT NOT NULL DEFAULT 0,
   PRIMARY KEY (`idJogador`))
 ENGINE = InnoDB;
 

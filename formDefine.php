@@ -16,6 +16,8 @@
                 <label for="idJogador">Jogador 1</label>
                 <select class="dados" name="idJogador" id="idJogador">
                     <?php
+                    session_start();
+
                     require_once './dao/DAOJogador.php';
                     require_once './dao/Conexao.php';
 
@@ -24,7 +26,7 @@
 
                     if ($lista) {
                         foreach ($lista as $l) {
-                            echo '<option value="' . $l['idJogador'] . '">' . $l['nome'] . '</option>';
+                            echo '$_SESSION["jogador1"] = <option value="' . $l['idJogador'] . '">' . $l['nome'] . '</option>';
                         }
                     }
                     ?>
@@ -43,7 +45,7 @@
 
                     if ($lista) {
                         foreach ($lista as $l) {
-                            echo '<option value="' . $l['idJogador'] . '">' . $l['nome'] . '</option>';
+                            echo '$_SESSION["jogador2"] = <option value="' . $l['idJogador'] . '">' . $l['nome'] . '</option>';
                         }
                     }
                     ?>

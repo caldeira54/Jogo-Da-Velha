@@ -18,5 +18,11 @@
             <button>Salvar</button>
         </div>
     </form>
+
+    <br>
+
+    <form action="./index.php">
+        <button> Início </button>
+    </form>
 </body>
 </html>

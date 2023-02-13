@@ -13,6 +13,14 @@
 
 <body>
     <div class="div">
+        <?php
+        session_start();
+
+        echo $_SESSION["jogador1"];
+        echo "<br>";
+        echo $_SESSION["jogador2"];
+        ?>
+
         <div id="jogo">
             <div class="linha">
                 <div class="casa" id="casa1"></div>
@@ -35,6 +43,11 @@
         <form action="./index.php">
             <button> Início </button>
         </form>
+
+        <form action="./formDefine.php">
+            <button> Definir Jogadores </button>
+        </form>
     </div>
 </body>
+
 </html>

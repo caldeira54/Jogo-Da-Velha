@@ -11,9 +11,9 @@ $(function () {
         var bgC = $("#casa" + c).css("background-image");
         if ((bgA == bgB) && (bgB == bgC) && (bgA != "none" && bgA != "")) {
             if (bgA.indexOf("1.jpg") >= 0)
-                vencedor = "1";
+                vencedor = "<?php session_start(); echo $_SESSION['jogador1']; ?>";
             else
-                vencedor = "2";
+                vencedor = "<?php echo $_SESSION['jogador2']; ?>";
             return true;
         }
         else {
