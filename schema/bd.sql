@@ -20,24 +20,8 @@ USE `jogoDaVelha` ;
 CREATE TABLE IF NOT EXISTS `jogoDaVelha`.`jogador` (
   `idJogador` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NOT NULL,
+  `qtoVitorias` INT NOT NULL DEFAULT 0,
   PRIMARY KEY (`idJogador`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `jogoDaVelha`.`vitorias`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `jogoDaVelha`.`vitorias` (
-  `idVitorias` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `idJogador` INT UNSIGNED NOT NULL,
-  `quantidade` INT NOT NULL,
-  PRIMARY KEY (`idVitorias`),
-  INDEX `fk_vitorias_jogador_idx` (`idJogador` ASC) VISIBLE,
-  CONSTRAINT `fk_vitorias_jogador`
-    FOREIGN KEY (`idJogador`)
-    REFERENCES `jogoDaVelha`.`jogador` (`idJogador`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
