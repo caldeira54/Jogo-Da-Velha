@@ -12,9 +12,9 @@
 <body>
     <div class="div">
         <div class="retangulo">
-            <div id="jogador1">
-                <label for="idJogador">Jogador 1</label>
-                <select class="dados" name="idJogador" id="idJogador">
+            <div class="jogador">
+                <label for="jogador1">Jogador 1</label>
+                <select class="dados" name="jogador1" id="jogador1">
                     <?php
                     session_start();
 
@@ -26,16 +26,16 @@
 
                     if ($lista) {
                         foreach ($lista as $l) {
-                            echo '$_SESSION["jogador1"] = <option value="' . $l['idJogador'] . '">' . $l['nome'] . '</option>';
+                            echo '' . $_SESSION["jogador1"] ='' . '<option value="' . $l['idJogador'] . '">' . $l['nome'] . '</option>';
                         }
                     }
                     ?>
                 </select>
             </div>
 
-            <div id="jogador2">
-                <label for="idJogador">Jogador 2</label>
-                <select class="dados" name="idJogador" id="idJogador">
+            <div>
+                <label for="jogador2">Jogador 2</label>
+                <select class="dados" name="jogador2" id="jogador2">
                     <?php
                     require_once './dao/DAOJogador.php';
                     require_once './dao/Conexao.php';
@@ -45,7 +45,7 @@
 
                     if ($lista) {
                         foreach ($lista as $l) {
-                            echo '$_SESSION["jogador2"] = <option value="' . $l['idJogador'] . '">' . $l['nome'] . '</option>';
+                            echo '' . $_SESSION["jogador2"] ='' . '<option value="' . $l['idJogador'] . '">' . $l['nome'] . '</option>';
                         }
                     }
                     ?>

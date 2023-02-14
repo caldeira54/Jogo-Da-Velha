@@ -39,7 +39,9 @@
             </div>
             <div id="resultado"></div>
         </div>
+    </div>
 
+    <div class="botoes">
         <form action="./index.php">
             <button> Início </button>
         </form>
