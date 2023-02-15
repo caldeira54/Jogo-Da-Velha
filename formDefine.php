@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 <body>
     <div class="div">
         <div class="retangulo">
-            <div class="jogador">
+            <div>
                 <form action="tabuleiro.php" method="POST">
                     <label for="jogador1">Jogador 1</label>
                     <select class="dados" name="jogador1" id="jogador1">
@@ -33,6 +33,8 @@
                         ?>
                     </select>
 
+                    <br>
+
                     <label for="jogador2">Jogador 2</label>
                     <select class="dados" name="jogador2" id="jogador2">
                         <?php
@@ -50,7 +52,9 @@
                         ?>
                     </select>
 
-                    <button> Jogar </button>
+                    <div class="button">
+                        <button> Jogar </button>
+                    </div>
                 </form>
             </div>
 
