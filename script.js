@@ -11,9 +11,9 @@ $(function () {
         var bgC = $("#casa" + c).css("background-image");
         if ((bgA == bgB) && (bgB == bgC) && (bgA != "none" && bgA != "")) {
             if (bgA.indexOf("1.jpg") >= 0)
-                vencedor = "<?php session_start(); echo $_SESSION['jogador1']; ?>";
+                vencedor = jogadores.jogador1;
             else
-                vencedor = "<?php echo $_SESSION['jogador2']; ?>";
+                vencedor = jogadores.jogador2;
             return true;
         }
         else {
@@ -26,7 +26,7 @@ $(function () {
             casasIguais(1, 4, 7) || casasIguais(2, 5, 8) || casasIguais(3, 6, 9) ||
             casasIguais(1, 5, 9) || casasIguais(3, 5, 7)
         ) {
-            $("#resultado").html("<h1>O jogador " + vencedor + "venceu! </h1>");
+            $("#resultado").html("<h1>O jogador " + vencedor + " venceu! </h1>");
             $(".casa").off("click");
         }
     }

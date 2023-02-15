@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilo.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
     <title>Tabuleiro</title>
 </head>
 
@@ -16,9 +15,9 @@
         <?php
         session_start();
 
-        echo $_SESSION["jogador1"];
-        echo "<br>";
-        echo $_SESSION["jogador2"];
+        $_SESSION["jogador1"] = $_POST["jogador1"];
+        $_SESSION["jogador2"] = $_POST["jogador2"];
+
         ?>
 
         <div id="jogo">
@@ -50,6 +49,15 @@
             <button> Definir Jogadores </button>
         </form>
     </div>
+
+    <script>
+        const jogadores = {
+            'jogador1': '<?php echo $_SESSION["jogador1"]; ?>',
+            'jogador2': '<?php echo $_SESSION["jogador2"]; ?>'
+        }
+    </script>
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
