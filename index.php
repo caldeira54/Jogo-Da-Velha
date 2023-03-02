@@ -15,31 +15,37 @@
         <div class="row">
             <div class="col">
                 <form action="./formCadastro.php">
-                    <div>
+                    <div class="container text-center">
                         <label for="texto" class="text-dark p-3"> Cadastrar um novo jogador </label>
                     </div>
 
-                    <button class="btn btn-outline-dark"> Cadastrar </button>
+                    <div class="container text-center">
+                        <button class="btn btn-outline-dark"> Cadastrar </button>
+                    </div>
                 </form>
             </div>
 
             <div class="col">
                 <form action="./formDefine.php">
-                    <div class="label">
+                    <div class="container text-center">
                         <label for="texto" class="text-dark p-3"> Definir Jogadores </label>
                     </div>
 
-                    <button class="btn btn-outline-dark"> Definir </button>
+                    <div class="container text-center">
+                        <button class="btn btn-outline-dark"> Definir </button>
+                    </div>
                 </form>
             </div>
 
             <div class="col">
                 <form action="./listagem.php">
-                    <div class="label">
+                    <div class="container text-center">
                         <label for="texto" class="text-dark p-3"> Lista de Jogadores </label>
                     </div>
 
-                    <button class="btn btn-outline-dark"> Listar </button>
+                    <div class="container text-center">
+                        <button class="btn btn-outline-dark"> Listar </button>
+                    </div>
                 </form>
             </div>
         </div>

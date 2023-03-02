@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <title>Tabuleiro</title>
 </head>
@@ -40,13 +41,13 @@
         </div>
     </div>
 
-    <div class="botoes">
-        <form action="./index.php">
-            <button> Início </button>
+    <div class="row justify-content-md-center">
+        <form action="./index.php" class="col-2 text-center">
+            <button class="btn btn-outline-dark"> Início </button>
         </form>
 
-        <form action="./formDefine.php">
-            <button> Definir Jogadores </button>
+        <form action="./formDefine.php" class="col-2 text-center">
+            <button class="btn btn-outline-dark"> Definir Jogadores </button>
         </form>
     </div>
 
@@ -58,6 +59,7 @@
     </script>
 
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 </html>
