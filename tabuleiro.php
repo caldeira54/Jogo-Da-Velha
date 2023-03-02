@@ -41,12 +41,12 @@
         </div>
     </div>
 
-    <div class="btn-group">
-        <form action="./index.php">
+    <div class="row justify-content-md-center">
+        <form action="./index.php" class="col-2 text-center">
             <button class="btn btn-outline-dark"> Início </button>
         </form>
 
-        <form action="./formDefine.php">
+        <form action="./formDefine.php" class="col-2 text-center">
             <button class="btn btn-outline-dark"> Definir Jogadores </button>
         </form>
     </div>
